@@ -1,3 +1,11 @@
+# WPF 스타일 샘플 미터기
+
+`PacketProcessor.dll` API를 C#에서 사용해 만든 미터기 입니다.
+WinDivert로 TCP 패킷을 캡처해 미터기 DLL에 투입하고, 콜백으로 실시간 DPS를 집계합니다.
+관리자 권한을 필요로 합니다.
+
+---
+
 # SimpleMeter
 
 `PacketProcessor.dll` API를 C#에서 사용하는 방법을 보여주는 예시 프로젝트입니다.
