@@ -25,6 +25,7 @@
   "settings_label_bar_row_bg": "행 배경 색상",
   "settings_label_bar_row_bg_opacity": "행 배경 투명도",
   "settings_label_bar_opacity": "바 투명도",
+  "settings_label_font_size": "폰트 크기",
 
   "settings_section_font_color": "폰트 색상 (영역별)",
   "settings_label_boss_name": "보스 이름",
@@ -45,7 +46,7 @@
   "settings_section_clickthrough": "클릭 통과 단축키",
   "settings_label_click_disable": "클릭 비허용",
   "settings_label_click_enable": "클릭 허용",
-  "settings_note_clickthrough": "※ 클릭 비허용 시 창을 통과하여 뒤쪽 프로그램을 클릭할 수 있습니다.\n※ 클릭 통과 상태는 저장되지 않으며 항상 허용 상태로 시작됩니다.",
+  "settings_note_clickthrough": "※ 클릭 비허용 시 창을 통과하여 뒤쪽 프로그램을 클릭할 수 있습니다.\n※ 클릭 통과 상태는 기본적으로 저장되지 않으며 항상 허용 상태로 시작됩니다.",
 
   "settings_section_language": "언어 / Language",
   "settings_label_language": "언어",

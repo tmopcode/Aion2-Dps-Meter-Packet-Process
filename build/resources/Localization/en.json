@@ -25,6 +25,7 @@
   "settings_label_bar_row_bg": "Row Background",
   "settings_label_bar_row_bg_opacity": "Row BG Opacity",
   "settings_label_bar_opacity": "Bar Opacity",
+  "settings_label_font_size": "Font Size",
 
   "settings_section_font_color": "Font Colors",
   "settings_label_boss_name": "Boss Name",
@@ -44,8 +45,8 @@
 
   "settings_section_clickthrough": "Click-Through Hotkeys",
   "settings_label_click_disable": "Click Disable",
-  "settings_label_click_enable": "Click Enable",
-  "settings_note_clickthrough": "※ When click-disabled, clicks pass through to windows behind.\n※ Click-through state is not saved and always starts as enabled.",
+  "settings_label_click_enable": "Click Enabled",
+  "settings_note_clickthrough": "※ When click-disabled, clicks pass through to windows behind.\n※ Click-through state is not saved by default and starts as enabled.",
 
   "settings_section_language": "언어 / Language",
   "settings_label_language": "Language",
