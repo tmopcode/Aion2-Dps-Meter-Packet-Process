@@ -1,120 +1,170 @@
 # a2meter
 
-더이상 DLL을 통해 다른 사람들이 개발할 필요성이 없어서 개인빌드 배포용으로 변경합니다.
-
 WinDivert로 TCP 패킷을 캡처해 미터기 DLL에 투입하고, 콜백으로 실시간 DPS를 집계합니다.
 
 관리자 권한을 필요로 합니다.
 
 ---
 
-## 1. 미터기 실행후 화면
+## 메인 화면
+
+### 패킷 캡처 준비 화면
+
+캐릭터 선택 또는 캐릭터 이동 시 패킷 캡처가 시작됩니다.
 
 <p align="left">
-<img width="354" height="173" alt="Image"
-src="https://github.com/user-attachments/assets/e44b8975-05ed-48f3-984f-5cfc0b3ab7fa" />
+<img alt="패킷 캡처 준비" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EB%A9%94%EC%9D%B8/1.png?raw=true" />
 </p>
 
-📊 버튼 : 몬스터 상태이상 창 열기
-
----
-
-## 2. 미터기 설정창 화면
+하단 메뉴를 통해 그래프, 설정, 초기화, 종료 기능에 접근할 수 있습니다.
 
 <p align="left">
-<img width="376" height="702" alt="Image"
-src="https://github.com/user-attachments/assets/f65de8f6-27fb-4a25-842f-4d3511455b15" />
-</p>
-
-<p align="left">
-<img width="365" height="601" alt="Image"
-src="https://github.com/user-attachments/assets/551f7c2c-86ab-4f50-bcbc-0ef770399ce7" />
-</p>
-
-<p align="left">
-<img width="891" height="714" alt="Image"
-src="https://github.com/user-attachments/assets/ef16ca35-1fe8-429c-8d61-635e3919a8a7" />
+<img alt="패킷 캡처 준비 - 하단 메뉴" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EB%A9%94%EC%9D%B8/2.png?raw=true" />
 </p>
 
 ---
 
-## 3. 버프 / 디버프 화면
+### 패킷 감지 초기 화면
+
+전투 진입 전 초기 상태로, 전투 시간 / 데미지 / HP를 표시합니다.
 
 <p align="left">
-<img width="866" height="597" alt="Image"
-src="https://github.com/user-attachments/assets/d94ad55f-9e39-40ec-8085-a3ab444f6807" />
+<img alt="패킷 감지 초기" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EB%A9%94%EC%9D%B8/3.png?raw=true" />
 </p>
 
 <p align="left">
-<img width="648" height="568" alt="Image"
-src="https://github.com/user-attachments/assets/9b0352d4-ea10-47b8-bc13-b6cddc3b295c" />
-</p>
-
-> 일부 버프 디버프스킬이 스킬이름으로 출력되는 현상이 있음(실제 해당 스킬이 아님에도)
-
-### 대상이 없을시 경고메시지 출력
-
-<p align="left">
-<img width="296" height="154" alt="Image"
-src="https://github.com/user-attachments/assets/18fe3767-e699-4738-9b31-40a818ab6d26" />
+<img alt="패킷 감지 초기 - 하단 메뉴" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EB%A9%94%EC%9D%B8/4.png?raw=true" />
 </p>
 
 ---
 
-## 4. 디테일 화면
+### 데미지 패킷 감지 플레이어 목록
+
+전투 중 플레이어별 DPS 순위 및 누적 피해량을 표시합니다.
 
 <p align="left">
-<img width="1108" height="627" alt="Image"
-src="https://github.com/user-attachments/assets/21cbf489-6fc5-46ef-80b2-4bc12b089cb9" />
+<img alt="플레이어 목록" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EB%A9%94%EC%9D%B8/5.png?raw=true" />
+</p>
+
+실시간 그래프를 함께 표시할 수 있습니다.
+
+<p align="left">
+<img alt="플레이어 목록 + 실시간 그래프" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EB%A9%94%EC%9D%B8/6.png?raw=true" />
 </p>
 
 ---
 
-## 5. 실제 사용 화면
+### 몬스터(NPC) 리스트
+
+현재 전투 중인 몬스터 목록을 드롭다운으로 확인하고 전환할 수 있습니다.
 
 <p align="left">
-<img width="343" height="444" alt="Image"
-src="https://github.com/user-attachments/assets/95bb33b0-2bc4-498d-bb69-1d775d8c512e" />
+<img alt="몬스터 리스트" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EB%A9%94%EC%9D%B8/7.png?raw=true" />
 </p>
 
 ---
 
-## 6. 기본 설정 값(단축키 등)
+## 설정
 
-| 기능 | 단축키 |
-|------|--------|
-| 초기화 | `Ctrl + R` |
-| 클릭 비허용 | `Ctrl + Page Up` |
-| 클릭 허용 | `Ctrl + Page Down` |
-| 트레이 | `Ctrl + T` |
+### 표시
 
-> 단축키 변경사항은 저장후 프로그램을 재실행 해주세요.
+보스 판정, 비율 표시 방식, 본인 표시, 플레이어 정보, 닉네임 마스킹 등을 설정합니다.
 
-대미지바 영역 우클릭을 통해 디테일 창 확인 가능.
-
-메인 화면을 제외한 설정 디테일 창의 경우 ESC를 통해 닫기 가능.
+<p align="left">
+<img alt="설정 - 표시" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EC%84%A4%EC%A0%95/1.png?raw=true" />
+</p>
 
 ---
 
-## 7. 예시 스크린샷에 사용된 세팅 값 정보
+### 그래프
 
-```json
-{
-  "barColorTop": "#FFFF2020",
-  "barColorMid": "#FFFFDDDD",
-  "barColorBottom": "#FF880000",
-  "barGlowColor": "#FFFF0000",
-  "fontColor": "#FFFFFFFF",
-  "backgroundColor": "#E0302828",
-  "windowOpacity": 1,
-  "barHeightPercent": 15,
-  "barOpacity": 1,
-  "barRowBgColor": "#80201010",
-  "barRowBgOpacity": 1,
-  "bossNameColor": "#FFFFFFFF",
-  "labelColor": "#66FFFFFF",
-  "statValueColor": "#FFFFFFFF",
-  "dpsValueColor": "#FFD4E86A",
-  "playerNameColor": "#FFFFFFFF"
-}
-```
+실시간 DPS 그래프 표시 여부, 표시 대상, 그래프 모드(CMA / DPS), 변동 시간, 표시 간격, 애니메이션 등을 설정합니다.
+
+<p align="left">
+<img alt="설정 - 그래프" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EC%84%A4%EC%A0%95/2.png?raw=true" />
+</p>
+
+---
+
+### 색상
+
+직업별 색상 및 본인 색상, 종족별 색상, 전투력 색상을 설정합니다.
+
+<p align="left">
+<img alt="설정 - 색상" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EC%84%A4%EC%A0%95/3.png?raw=true" />
+</p>
+
+---
+
+### 단축키
+
+기능별 단축키를 설정합니다. 키를 클릭한 뒤 원하는 키를 누르면 변경되며, ESC로 취소합니다.
+
+<p align="left">
+<img alt="설정 - 단축키" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EC%84%A4%EC%A0%95/4.png?raw=true" />
+</p>
+
+| 기능 | 기본 단축키 |
+|------|------------|
+| 창 표시 / 숨김 | `Insert` |
+| 데이터 초기화 | `Delete` |
+| 클릭 금지 토글 | `End` |
+
+---
+
+### 시스템
+
+패킷 캡처 방식(WinDivert / Npcap), 틱레이트, 창 설정(항상 위, 클릭 금지, 투명도, 창 크기)을 설정합니다.
+
+<p align="left">
+<img alt="설정 - 시스템" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EC%84%A4%EC%A0%95/5.png?raw=true" />
+</p>
+
+---
+
+## 스킬 / 버프 / 디버프
+
+### 스킬 목록
+
+플레이어 클릭 시 스킬별 세부 통계(적중, 치명타, 강타, 완벽, 다단, 막기, 초당/평균/최소/최대/누적 피해)를 확인할 수 있습니다.
+
+<p align="left">
+<img alt="스킬 목록" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EC%8A%A4%ED%82%AC/1.png?raw=true" />
+</p>
+
+스킬 그룹을 펼쳐 세부 스킬별 통계를 확인할 수 있습니다.
+
+<p align="left">
+<img alt="스킬 목록 - 그룹 펼침" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EC%8A%A4%ED%82%AC/2.png?raw=true" />
+</p>
+
+---
+
+### 버프 목록
+
+버프 / 디버프 탭에서 사용 횟수 및 지속시간 유지율을 확인할 수 있습니다.
+
+<p align="left">
+<img alt="버프 목록" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EC%8A%A4%ED%82%AC/3.png?raw=true" />
+</p>
+
+---
+
+### 디버프 목록 (보스)
+
+보스에 적용된 디버프 및 지속시간 유지율을 확인할 수 있습니다.
+
+<p align="left">
+<img alt="디버프 목록 - 보스" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EC%8A%A4%ED%82%AC/4.png?raw=true" />
+</p>
+
+---
+
+## 업데이트 알림
+
+새로운 버전이 출시되면 실행 시 업데이트 알림 창이 표시됩니다.
+**지금 업데이트** 버튼으로 즉시 업데이트하거나, **건너뛰기**로 현재 버전을 유지할 수 있습니다.
+
+<p align="left">
+<img alt="업데이트 알림" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8/1.png?raw=true" />
+</p>
