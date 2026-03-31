@@ -4,7 +4,7 @@ WinDivert로 TCP 패킷을 캡처해 미터기 DLL에 투입하고, 콜백으로
 
 관리자 권한을 필요로 합니다.
 
-### [다운로드 AionMeter](https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/raw/refs/heads/main/update/AionMeter0.2.zip)
+### [다운로드 AionMeter](https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/raw/refs/heads/main/update/AionMeter0.3.zip)
 
 ---
 
@@ -106,11 +106,11 @@ WinDivert로 TCP 패킷을 캡처해 미터기 DLL에 투입하고, 콜백으로
 <img alt="설정 - 단축키" src="https://github.com/tmopcode/Aion2-Dps-Meter-Packet-Process/blob/main/image/%EC%84%A4%EC%A0%95/4.png?raw=true" />
 </p>
 
-| 기능 | 기본 단축키 |
-|------|------------|
-| 창 표시 / 숨김 | `Insert` |
-| 데이터 초기화 | `Delete` |
-| 클릭 금지 토글 | `End` |
+| 기능           | 기본 단축키 |
+| -------------- | ----------- |
+| 창 표시 / 숨김 | `Insert`    |
+| 데이터 초기화  | `Delete`    |
+| 클릭 금지 토글 | `End`       |
 
 ---
 
